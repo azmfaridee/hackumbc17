@@ -1,10 +1,9 @@
 library(shiny)
 library(shinyjs)
-
+library(shinythemes)
 
 # mandatroy fileds in the form
 fieldsMandatory <- c("name", "r_intrests","skills")
-
 
 # function to add asterick to the mandatiry filed
 labelMandatory <- function(label) {
@@ -15,11 +14,31 @@ labelMandatory <- function(label) {
 }
 
 # function to store the response
-
 fieldsAll <- c("name", "type_of_edu", "grad_year", "r_intrests", "skills")
 responsesDir <- file.path("responses")
 epochTime <- function() {
   as.integer(Sys.time())
+}
+
+
+# Save a response
+# ---- This is one of the two functions we will change for every storage type ----
+saveData <- function(data) {
+  data <- as.data.frame(t(data))
+  if (exists("responses")) {
+    responses <<- rbind(responses, data)
+  } else {
+    responses <<- data
+  }
+}
+
+
+# Load all previous responses
+# ---- This is one of the two functions we will change for every storage type ----
+loadData <- function() {
+  if (exists("responses")) {
+    responses
+  }
 }
 
 
@@ -31,38 +50,49 @@ shinyApp(
   ui = fluidPage( theme = "style.css",
                   shinyjs::useShinyjs(),
                   # shinyjs::inlineCSS(appCSS),
-    titlePanel("MeetYourProf - Suggesting best professors to work with"),
-    div(
-      id = "form",
-      
-      #name
-      textInput("name","Name", ""),
-      
-      #graduate or undergraduate
-      selectInput("type_of_edu", "Graduate or Undergraduate:",
-                  c("Graduate",
-                    "Undergraduate")),
-      #graduation year
-      selectInput("grad_year", "Expected Year of Graduation",
-                  c("2015","2016","2017","2018","2019","2020","2021","2022")),
-
-      #text box for research intrests
-
-      textInput("r_intrests","Enter Research Interests: (Enter comma seperated values)",""),
-      
-      #text box for skills
-      
-      textInput("skills","Enter your skillsets:  (Enter comma seperated values)",""),      
-      
-      #submit button
-      actionButton("submit", "Submit", class = "btn-primary")
-    )
+                  titlePanel("MeetYourProf - Suggesting best professors to work with"),
+                  
+                  div(id = "outer",
+                  div(
+                    id = "form",
+                    
+                    #name
+                    textInput("name","Name", ""),
+                    
+                    #graduate or undergraduate
+                    selectInput("type_of_edu", "Graduate or Undergraduate:",
+                                c("Graduate",
+                                  "Undergraduate")),
+                    #graduation year
+                    selectInput("grad_year", "Expected Year of Graduation",
+                                c("2015","2016","2017","2018","2019","2020","2021","2022")),
+                    
+                    #text box for research intrests
+                    
+                    textInput("r_intrests","Enter Research Interests",""),
+                    
+                    #text box for skills
+                    
+                    textInput("skills","Enter your skillsets",""),
+                    
+                    #submit button
+                    actionButton("submit", "Submit", class = "btn-primary")
+                  )
+                ),
+                
+                shinyjs::hidden(
+                  div(
+                    id = "thankyou_msg",
+                    h3("Thanks, your response was submitted successfully!"),
+                    actionLink("submit_another", "Submit another response")
+                  )
+                )
   ),
   
   
   # server side code
   server = function(input, output, session) {
-
+    
     # check in if all the mandatory fileds are selected    
     observe({
       # check if all mandatory fields have a value
@@ -83,18 +113,20 @@ shinyApp(
     formData <- reactive({
       data <- sapply(fieldsAll, function(x) input[[x]])
       data <- c(data, timestamp = epochTime())
-      data <- t(data)
       data
     })
     
     # action to take when submit button is pressed
-    Data = reactive({
-      if (input$submit>0) {
-        df <- data.frame(name=input$name, type_of_edu=input$type_of_edu, r_intrests=input$r_intrests,skills = input$skills,
-                              stringsAsFactors=FALSE)
-      write.csv(df,"Data.csv")
-      } else {NULL}
+    observeEvent(input$submit, {
+      saveData(formData())
+      shinyjs::reset("form")
+      shinyjs::hide("form")
+      shinyjs::show("thankyou_msg")
     })
     
+    observeEvent(input$submit_another, {
+      shinyjs::show("form")
+      shinyjs::hide("thankyou_msg")
+    })  
   }
 )
