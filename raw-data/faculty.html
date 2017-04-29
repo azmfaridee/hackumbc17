@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Full Time Faculty   - Department of Information Systems - UMBC</title>
+
+    <!-- Sets the viewport width to the width of the device, so media queries work -->
+    <!-- NOTE: We're locking the max scale (which prevents zooming) to fix bugs
+         during orientation changes on devices.  Our styles should accomodate this though. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="icon" type="image/png" href="http://sites.umbc.edu/wp-content/themes/umbc/assets/images/icon.png" />
+
+    <!-- Template Styles -->
+    <link rel="stylesheet" type="text/css" href="http://sites.umbc.edu/wp-content/themes/umbc/assets/stylesheets/base-50.min.css?v=2" />
+        
+    <!-- Site-Specific Customizations -->
+    <style type="text/css">
+      #site-header {background-color: #000000;background-image: url('http://informationsystems.umbc.edu/files/2016/08/department_header_test1-1.jpg');color: #ffffff;}
+      #site-header h1 {font-size: 10px;color: #ffffff;}
+      #site-header h1 a {color: #ffffff;}
+      #site-menu, #site-menu li a, #site-menu li ul {background-color: #ffcc00;color: #000000;}
+      #site-menu li:hover a {background-color: #ffffcc;color: #000000;}
+      #site-menu li a:hover, #site-menu li a:focus {background-color: #ffcc00;color: #000000;}
+      #site-menu .menu-arrow {color: #000000;}
+      #site-menu li:hover > a .menu-arrow {color: #000000;}
+      #site-footer {background-color: #ffcc00;color: #000000;}
+      #site-footer .site-name {background-color: #000000;color: #ffffff;}
+      #site-footer a {color: #000000;}
+      .layout-default .page-container-inner, .layout-home .page-container-inner {background-color: #ffffcc;}
+      .layout-default .page-sidebar, .layout-home .page-sidebar, .sidebar-nav a {background-color: #ffffcc;color: #000000;}
+      .sidebar-nav a .secondary {color: #646464;}
+      .sidebar-nav > ul > li > a, .sidebar-nav > ul > li.current-menu-item > a, .sidebar-nav > ul > li.current-menu-ancestor > a {color: #000000;}
+      .sidebar-nav-header {color: #000000;}
+      .sidebar-nav a:hover, .sidebar-nav a:focus, .sidebar-nav a:hover .secondary, .sidebar-nav a:focus .secondary { background-color: #ffffff;border-bottom-color: #ffffff;border-top-color: #ffffff;color: #000000;}
+      .sidebar-nav .current-menu-item > a:hover > .menu-arrow, .sidebar-nav .current-menu-item > a:focus > .menu-arrow {color: #ffffff;}
+      .sidebar-nav .current-menu-item > a, .sidebar-nav .current-menu-item > a .secondary {background-color: #000000;color: #ff0000;}
+      .sidebar-nav .current-menu-item > a > .menu-arrow, .sidebar-nav .current-menu-item > a:hover > .menu-arrow, .sidebar-nav .current-menu-item > a:focus > .menu-arrow {color: #000000;}
+      .widget .widgettitle {background-color: #000000;color: #ffcc00;}
+      .widget .widgettitle a {color: #ffcc00;}
+      .widget > ul, .widget > .textwidget, .widget.widget_twitter_timeline {background-color: #cccccc;color: #000000;}
+      .widget.widget_twitter_timeline iframe { width: 100%; }
+      .widget > ul a, .widget > .textwidget a {color: #006699;}
+      .widget .rss-date, .widget .secondary, .widget_twitter > ul a.timesince {color: #000000;}
+      .widgetcorner, .widgetcorner .fill {background-color: #ffffcc;}
+      .layout-default .widgetcorner .corner {border-right-color: #000000;}
+      .layout-home .widgetcorner .corner {border-left-color: #000000;}
+            @media screen and (max-width: 767px) {
+        #mobile-site-menu-expander {background-color: #000000;color: #ffffff;}
+        .mobile-site-menu-expander-bar {background-color: #ffffff;}
+        #site-header {background-image: url('http://informationsystems.umbc.edu/files/2014/11/IS-Mobile-Banner-2.jpg');}
+        #site-header h1 {font-size: 5px;}
+        #site-menu li:hover a {background-color: #ffcc00;color: #000000;}
+        .layout-default .page-sidebar, .layout-home .page-sidebar {background-color: #ffffcc;color: #000000;}
+        
+        #site-header.hide-text h1 .label { visibility: visible; }
+        #site-header.hide-text-mobile h1 .label { visibility: hidden; }
+
+        /* This is here to override any custom color set by the theme */
+        .layout-default .page-container-inner, .layout-home .page-container-inner { background-color: #fff; }
+      }
+    </style>
+    
+    
+        
+    <!-- Some custom styles just for older IE versions -->
+    <!--[if lte IE 8]>
+    <style>
+      #container { border: 1px solid #ddd; border-top: none; }
+      #site-footer .footer-field { float: left; }
+      #site-menu ul li a { border-left: none; }
+      #site-menu > ul > li > a .menu-arrow { display: none; }
+      .widget-slideshow .playlist li { float: left; display: block; overflow: hidden; }
+    </style>
+    <![endif]-->
+
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script async src="http://sites.umbc.edu/wp-content/themes/umbc/assets/javascripts/wordpress.base.min.js?v=4"></script>
+
+    
+    <link rel='dns-prefetch' href='//sites.umbc.edu' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/informationsystems.umbc.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='slideshow-style-css'  href='//sites.umbc.edu/wp-content/mu-plugins/slideshow/assets/slideshow.min.css?ver=1.1' type='text/css' media='all' />
+<script type='text/javascript' src='//sites.umbc.edu/wp-content/mu-plugins/slideshow/assets/slideshow.min.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='http://informationsystems.umbc.edu/wp-json/' />
+<meta name="generator" content="UMBC" />
+<link rel="canonical" href="http://informationsystems.umbc.edu/home/faculty-and-staff/faculty/" />
+<link rel="alternate" type="application/json+oembed" href="http://informationsystems.umbc.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Finformationsystems.umbc.edu%2Fhome%2Ffaculty-and-staff%2Ffaculty%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://informationsystems.umbc.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Finformationsystems.umbc.edu%2Fhome%2Ffaculty-and-staff%2Ffaculty%2F&#038;format=xml" />
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-1045586-47', 'auto');
+            // Site-specific Tracker
+      ga('create', 'UA-41867550-1', 'auto', {'name': 'siteSpecific'});
+      ga('siteSpecific.send', 'pageview');
+            ga('send', 'pageview');
+      
+    </script>
+            
+    <script type="text/javascript">
+      function searchLoaded(){
+        google.search.CustomSearchControl.attachAutoCompletion(
+          '008589878477221853669:fglxypz-c8m+qptype:1',
+          document.getElementById('umbc-nav-search-query'),
+          'umbc-nav-search-input');
+      }
+      
+      function loadSearch(){
+        google.load( 'search', '1', { "callback" : searchLoaded } );
+      }
+      
+      (function(){
+        var script = document.createElement("script"); script.type = "text/javascript"; script.async = true;
+        script.src = "http://www.google.com/jsapi?callback=loadSearch";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+      })();
+    </script>
+    
+    <script>
+      $(function(){
+        $('.menu a[href="#"]').on('click', function(e){
+          e.preventDefault();
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body id="home">
+        
+        <div id="skip-content"><a href="#main-content">Skip to Main Content</a></div>
+    <div id="container">
+      <header id="umbc-header">
+        <div id="umbc-logo"><a href="http://umbc.edu" title="UMBC: An Honors University in Maryland"><span>UMBC: An Honors University in Maryland</span></a></div>
+        <nav role="navigation" id="umbc-nav" >
+          <ul id="umbc-nav-items">
+            <li id="umbc-nav-umbc50"><a href="http://50.umbc.edu/">UMBC50</a></li>
+            <li id="umbc-nav-azindex"><a href="http://umbc.edu/go/umbc-azindex">A-Z Index</a></li>
+            <li id="umbc-nav-myumbc"><a href="http://my.umbc.edu">myUMBC</a></li>
+            <li id="umbc-nav-events"><a href="http://my.umbc.edu/events">Events</a></li>
+            <li id="umbc-nav-directory"><a href="http://umbc.edu/go/directory">Directory</a></li>
+            <li id="umbc-nav-maps"><a href="http://umbc.edu/go/maps">Maps</a></li>
+          </ul>
+          <form role="search" id="umbc-nav-search-input" action="http://www.umbc.edu/stats/searchthru/" method="get">
+            <label for="umbc-nav-search-query">Search UMBC</label>
+            <input type="hidden" name="cx" value="008589878477221853669:fglxypz-c8m" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input id="umbc-nav-search-query" type="text" autocomplete="off" name="q" size="250" maxlength="250" placeholder="Enter Search Terms" title="Enter Search Terms">
+            <input id="umbc-nav-search-submit" name="submit" type="submit" value="" aria-label="Search">
+          </form>
+        </nav>
+      </header>
+
+      <header role="banner" id="site-header" class=" hide-text hide-text-mobile">
+                <a href="#" id="mobile-site-menu-expander">
+          <span class="mobile-site-menu-expander-bar"></span>
+          <span class="mobile-site-menu-expander-bar"></span>
+          <span class="mobile-site-menu-expander-bar"></span>
+        </a>
+                
+        <h1><a href="http://informationsystems.umbc.edu"><span class="label">Department of Information Systems</span></a></h1>
+        
+      </header>
+
+            <nav role="navigation" id="site-menu">
+        <ul id="menu-main" class="menu"><li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-page-ancestor menu-item-89"><a href="http://informationsystems.umbc.edu/">Home</a></li>
+<li id="menu-item-2265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2265"><a href="http://informationsystems.umbc.edu/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-1238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1238"><a href="http://informationsystems.umbc.edu/home/welcome-2/message-from-the-chair/">Message from the Chair</a></li>
+	<li id="menu-item-789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-789"><a href="http://informationsystems.umbc.edu/home/welcome-2/department-of-information-systems-faq/">FAQ</a></li>
+	<li id="menu-item-3053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3053"><a href="http://informationsystems.umbc.edu/about/employment-opportunities/">Employment Opportunities</a></li>
+	<li id="menu-item-1104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1104"><a href="http://informationsystems.umbc.edu/about/innovation/">Innovation</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1297"><a href="http://informationsystems.umbc.edu/about/innovation/teaching-innovation-archive/">Teaching Innovation Archive</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2581" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2581"><a href="http://informationsystems.umbc.edu/2576-2/">Welcome Military and Veteran Students</a></li>
+</ul>
+</li>
+<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-111"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/">Undergraduate</a>
+<ul class="sub-menu">
+	<li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-292"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/">Undergraduate Degree Programs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-968"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/bachelor-of-arts-in-business-technology-administration/">BA in Business Technology Administration</a></li>
+		<li id="menu-item-2187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2187"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/bachelor-of-arts-in-business-technology-administration-declared-prior-to-fall-2012/">BA in Business Technology Administration &#8211; Declared Prior to Fall 2012</a></li>
+		<li id="menu-item-975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-975"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/bachelor-of-science-in-information-systems/">Bachelor of Science in Information Systems</a></li>
+		<li id="menu-item-997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-997"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/combined-bachelor-of-arts-in-business-technology-administrationhuman-centered-computing-master-of-science/">Combined BA in Business Technology Administration/Human-Centered Computing MS</a></li>
+		<li id="menu-item-996" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-996"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/combined-bachelor-of-sciencemaster-of-science/">Combined Bachelor of Science/Master of Science</a></li>
+		<li id="menu-item-1139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1139"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/combined-bachelor-of-sciencehuman-centered-computing-master-of-science/">Combined Bachelor of Science/Human Centered Computing Master of Science</a></li>
+		<li id="menu-item-1007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1007"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/minor-in-information-systems/">Minor in Information Systems</a></li>
+		<li id="menu-item-2171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/the-alex-brown-center-entrepreneurship-and-innovation-minor/">Entrepreneurship and Innovation Minor</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3316"><a href="http://informationsystems.umbc.edu/certificate-programs/">Certificate Programs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-310"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-upper-division-certificates/">IS Upper Division Certificates</a></li>
+		<li id="menu-item-356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-management-and-business-program/">Management Certificates</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3375" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3375"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-course-listing/">Undergraduate Course Listing</a></li>
+	<li id="menu-item-3568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3568"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-forms/">Undergraduate Forms</a></li>
+	<li id="menu-item-768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-768"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/academic-honors-scholarships-and-resources/">Academic Honors, Scholarships and Resources</a></li>
+	<li id="menu-item-780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-research-opportunities/">Undergraduate Research Opportunities</a></li>
+</ul>
+</li>
+<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-145"><a href="http://informationsystems.umbc.edu/home/graduate-programs/">Graduate Programs</a>
+<ul class="sub-menu">
+	<li id="menu-item-403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-403"><a href="http://informationsystems.umbc.edu/home/graduate-programs/master-of-science-programs/">Master of Science Programs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-834"><a href="http://informationsystems.umbc.edu/home/graduate-programs/master-of-science-programs/master-of-science-in-information-systems/">Master of Science in Information Systems</a></li>
+		<li id="menu-item-1235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a href="http://informationsystems.umbc.edu/home/graduate-programs/online-masters-in-information-systems/">Online Master&#8217;s in Information Systems</a></li>
+		<li id="menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842"><a href="http://informationsystems.umbc.edu/home/graduate-programs/master-of-science-programs/master-of-science-in-human-centered-computing-hcc/">Master of Science in Human-Centered Computing (HCC)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-408"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/">Doctor of Philosophy Programs</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3784"><a href="http://informationsystems.umbc.edu/doctor-of-philosophy-in-information-systems-page-1/">Doctor of Philosophy in Information Systems</a></li>
+		<li id="menu-item-950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-950"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/doctor-of-philosophy-in-information-systems/is-comprehensive-review-policy/">IS Comprehensive Review Policy</a></li>
+		<li id="menu-item-3131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3131"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/doctor-of-philosophy-in-human-centered-computing-hcc/">Doctor of Philosophy in Human-Centered Computing (HCC)</a></li>
+		<li id="menu-item-855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-855"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/human-centered-computing-comprehensive-review-policy/">Human-Centered Computing Comprehensive Review Policy</a></li>
+		<li id="menu-item-1250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1250"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/academic-integrity-policies-for-phd-comprehensive-exams-both-is-and-hcc-phd-programs/">Academic Integrity Policies for PhD Comprehensive Exams (BOTH IS and HCC PhD Programs)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3373"><a href="http://informationsystems.umbc.edu/home/graduate-programs/graduate-forms/">Graduate Program Forms</a></li>
+	<li id="menu-item-3374" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3374"><a href="http://informationsystems.umbc.edu/home/graduate-programs/graduate-course-listing/">Graduate Course Listing</a></li>
+</ul>
+</li>
+<li id="menu-item-186" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-186"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/">People</a>
+<ul class="sub-menu">
+	<li id="menu-item-687" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-685 current_page_item menu-item-687"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/faculty/">Full Time Faculty</a></li>
+	<li id="menu-item-1146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1146"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/part-time-faculty/">Part Time Faculty</a></li>
+	<li id="menu-item-1154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/special-status-faculty/">Special Status Faculty</a></li>
+	<li id="menu-item-621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-621"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/graduate-and-research-assistants/">Graduate and Research Assistants</a></li>
+	<li id="menu-item-624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-624"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/staff/">Staff</a></li>
+</ul>
+</li>
+<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-189"><a href="http://informationsystems.umbc.edu/home/research/">Research</a>
+<ul class="sub-menu">
+	<li id="menu-item-1578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1578"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/">Areas of Research</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1583"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/artificial-intelligence-and-knowledge-management/">Artificial Intelligence and Knowledge Management</a></li>
+		<li id="menu-item-1595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1595"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/database-and-datamining/">Database and Datamining</a></li>
+		<li id="menu-item-1611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1611"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/hit/">Health Information Technology</a></li>
+		<li id="menu-item-1608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/human-centered-computing/">Human-Centered Computing</a></li>
+		<li id="menu-item-1628" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1628"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/systems-and-software/">Software Engineering</a></li>
+	</ul>
+</li>
+	<li id="menu-item-660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-660"><a href="http://informationsystems.umbc.edu/home/research/current-extramural-funded-projects/">Externally Funded Projects</a></li>
+	<li id="menu-item-2431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2431"><a href="http://informationsystems.umbc.edu/home/research/department-research-seminar-series/">Department Research Seminar Series</a></li>
+</ul>
+</li>
+<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-193"><a href="http://informationsystems.umbc.edu/home/media/">Media</a>
+<ul class="sub-menu">
+	<li id="menu-item-2545" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2545"><a href="http://informationsystems.umbc.edu/about/publications/">Publications</a></li>
+	<li id="menu-item-1973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1973"><a href="http://informationsystems.umbc.edu/home/media/photo-gallery/">Photo Gallery</a></li>
+	<li id="menu-item-1979" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1979"><a href="http://informationsystems.umbc.edu/home/media/poster-gallery/">Poster Gallery</a></li>
+	<li id="menu-item-1983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1983"><a href="http://informationsystems.umbc.edu/home/media/presentation-gallery/">Presentation Gallery</a></li>
+	<li id="menu-item-3075" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3075"><a href="http://informationsystems.umbc.edu/about/ant-ozoks-daily-record-interview/">Ant Ozok&#8217;s Daily Record Interview</a></li>
+	<li id="menu-item-2524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2524"><a href="http://informationsystems.umbc.edu/about/ant-ozoks-apprearance-the-kojo-nnamdi-show/">Ant Ozok&#8217;s Apprearance The Kojo Nnamdi Show</a></li>
+</ul>
+</li>
+</ul>      </nav>
+            
+            <a name="main-content"></a><section class="page-container layout-default">
+  <section class="page-content">
+    <section class="main-content">
+              <header>
+          <h1>Full Time Faculty</h1>
+        </header>
+                  <article role="main">
+                <h6><a href="http://www.stacybranham.com/Stacy_Branhams_Website/Welcome.html">Stacy Branham</a>, PhD, Virginia Tech (<a href="mailto:sbranham@umbc.edu" target="_blank">sbranham@umbc.edu</a>) [Lecturer]</h6>
+<p><a href="http://informationsystems.umbc.edu/files/2013/02/SB.jpeg"><img class="alignleft size-thumbnail wp-image-3001" src="http://informationsystems.umbc.edu/files/2013/02/SB-150x150.jpeg" alt="SB" width="150" height="150" /></a>Stacy Branham is a Lecturer in the Department of Information Systems at UMBC. Dr. Branham’s teaching focuses on making computing more appealing, accessible, and welcoming to first-year students towards increasing retention and diversity. Dr. Branham&#8217;s research focuses on the role of computer technologies in mediating communication between significant others, friends, and colleagues. She works with populations that exhibit cross-cultural communication: people who are blind and people who are sighted; students and teachers; women and men. Through qualitative field studies and participant-observer engagements, she reflects on the design of technologies that can foster <i>empathic communication</i>––a form of talking that involves sharing, intimate connection, and mutual growth.</p>
+<p>&nbsp;</p>
+<h6></h6>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~canfield">Gerald Canfield</a>, PhD, University of Utah, School of Medicine (<a href="mailto:canfield@umbc.edu">canfield@umbc.edu</a>) [Associate Professor]</h6>
+<p><a href="http://zaad2.umbc.edu/class/kippage/" target="_blank" rel="attachment wp-att-507"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/kip-150x150.gif" alt="kip" width="150" height="150" /></a>Gerald “Kip” Canfield does research in the areas of Healthcare Informatics and Computing in the Humanities. He is director of the <a href="http://zaad.umbc.edu/class/kippage/lhipage.html">Laboratory for Healthcare Informatics (LHI)</a>. His healthcare research emphasizes design and delivery of Clinical Information Systems for patient care and health research. These systems require involvement in the areas of database modeling, computer-supported collaborative work, decision support systems, and networking architecture.<br />
+Dr. Canfield’s interests in the humanities include computational lexicography, digital libraries, learning communities, and digital multimedia. His teaching areas are in networking and telecommunications, healthcare informatics, and enterprise IT architecture for business.</p>
+<p>&nbsp;</p>
+<h6></h6>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~zhchen">Zhiyuan Chen</a>, PhD, Cornell University (<a href="mailto:zhchen@umbc.edu">zhchen@umbc.edu</a>) [Associate Professor] [Graduate Program Director, IS]</h6>
+<p><a href="http://userpages.umbc.edu/~zhchen/index.html" target="_blank" rel="attachment wp-att-511"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/zhiyuan-portrait-small-150x150.jpg" alt="zhiyuan-portrait-small" width="150" height="150" /></a>My research covers following areas:  <b>Privacy preserving data mining and data management. </b>I am interested in algorithms for preserving privacy of data and at the same time allows accurate analysis of the data.　<b>Data Exploration and Navigation. </b>Database users often find it difficult to find useful information from databases. Their queries often return too many irrelevant answers. I am interested in using data mining, navigation, and information retrieval techniques to help user narrow down their scope of search and quickly locate relevant answers.  <b>Semantic-based Search and Data Integration Using Semantic Networks. </b>My research develops a technique that uses semantic network to capture relationships between data objects and helps users find related information. The semantic network can also be used in data integration to find relevant data sets to integrate.</p>
+<p>&nbsp;</p>
+<h6></h6>
+<h6><a href="http://www.coeit.umbc.edu/profile/amy-everhart" target="_blank">Amy Everhart</a>, MS, UMBC (<a href="mailto:everhart@umbc.edu">everhart@umbc.edu</a>) [Senior Lecturer]</h6>
+<p><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/fbicon215/" rel="attachment wp-att-596"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/fbICON215-150x150.gif" alt="fbICON215" width="150" height="150" /></a>computer-based systems, management information systems</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~gangopad">Aryya Gangopadhyay</a>, PhD, Rutgers University (<a href="mailto:gangopad@umbc.edu">gangopad@umbc.edu</a>) [Professor] [Chair]</h6>
+<p><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/faculty/download-25/" rel="attachment wp-att-1190"><img class="alignleft wp-image-1190" src="http://informationsystems.umbc.edu/files/2013/02/download-25.jpg" alt="download (25)" width="134" height="189" /></a>Aryya Gangopadhyay is a professor and the chair of UMBC’s Information Systems Department. He has been a faculty member at UMBC since 1997. His recent courses include Computational Methods in Information Systems Research, Introduction to Data Mining, and Database Management Systems.</p>
+<p>Dr. Gangopadhyay’s research interests are in the areas of databases and data mining. Currently, he is focused on privacy preserving data mining, spatio-temporal data mining, and data mining for health informatics. His research has been funded by grants from NSF, NIST, US Department of Education, Maryland Department of Transportation, and other agencies.  Dr. Gangopadhyay has published five books and nearly 100 research articles. He holds a Ph.D. in Computer Information Systems from Rutgers University.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><strong><a href="http://userpages.umbc.edu/~dgorin1/" target="_blank">Dina Glazer</a>, MS, UMBC (<a href="mailto:dgorin1@umbc.edu">dgorin1@umbc.edu</a>) [Lecturer]</strong></h6>
+<p><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/fbicon215/" rel="attachment wp-att-596"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/fbICON215-150x150.gif" alt="fbICON215" width="150" height="150" /></a>networking, data communications</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://www.umbc.edu/hit/faculty.html" target="_blank">Krystl Haerian</a>, MD, University of Maryland Medical School (<a href="mailto:kfrank2@umbc.edu">kfrank2@umbc.edu</a>) [Professor of Practice] [Graduate Program Director, Health IT]</h6>
+<p><a href="http://informationsystems.umbc.edu/files/2013/02/182f520.jpg"><img class="alignleft size-thumbnail wp-image-2899" src="http://informationsystems.umbc.edu/files/2013/02/182f520-150x150.jpg" alt="182f520" width="150" height="150" srcset="http://informationsystems.umbc.edu/files/2013/02/182f520-150x150.jpg 150w, http://informationsystems.umbc.edu/files/2013/02/182f520-300x300.jpg 300w, http://informationsystems.umbc.edu/files/2013/02/182f520.jpg 337w" sizes="(max-width: 150px) 100vw, 150px" /></a>Dr. Haerian has over 12 years of medical, informatics, and public health experience in both academia and government. As a Commissioner’s Fellow at the Food and Drug Administration’s (FDA) Center for Tobacco Products, she employed informatics methods to design, conduct, and analyze studies that support the development of policies and regulations intended to decrease morbidity and mortality from tobacco products.  As a Postdoctoral Fellow at Columbia University’s Department of Biomedical Informatics, her research was focused on developing and applying methodologies for pharmacovigilance and drug repurposing, utilizing electronic health record data and natural language processing. During her fellowship she was awarded Best Presentation at the NLM Training Conference and First Place Poster Presentation at the DIA Annual Meeting; she was also honored to be invited to present to the National Library of Medicine Board of Regents. Dr. Haerian completed a Postdoctoral Fellowship at the National Institute of Health Laboratory for Informatics Development. Her research included the development and application of clinical decision support and alerts to prevent medication errors and to improve collection of clinical research data. She also served on the JAMIA Student Editorial Board and the NIH Fellows Editorial Board.  As a Congressional Legislative Fellow in the US House of Representatives, Dr. Haerian served as a scientific advisor with particular expertise in public health and clinical medicine for Congresswoman Roybal-Allard and her staff. Her responsibilities included meeting with lobbyists and special interest groups, drafting bills and legislation, writing speeches and floor statements, and supporting the Congresswoman’s agenda as Chair of the Congressional Hispanic Caucus Health Taskforce to advance policies that reduce health disparities across all minority communities. Dr. Haerian received her medical degree from the University of Maryland School of Medicine.</p>
+<p>&nbsp;</p>
+<h6><a href="http://www.amyhurst.com/">Amy Hurst</a>, PhD, Carnegie Mellon University (<a href="mailto:amyhurst@umbc.edu">amyhurst@umbc.edu</a>) [Associate Professor]  [Graduate Program Director, Human-Centered Computing]</h6>
+<p><img class="alignleft wp-image-3843 size-thumbnail" src="http://informationsystems.umbc.edu/files/2013/02/AmyHurst-8858-e1487602615830-150x150.jpg" alt="AmyHurst 8858" width="150" height="150" />I am an Associate Professor of <a href="http://hcc.umbc.edu/" target="_blank">Human-Centered Computing </a>in the Information Systems Department at UMBC and I study making, accessibility challenges, and build assistive technologies. I am interested in identifying new opportunities for technology to empower underserved populations, and understanding the impact these new technologies make in existing communities.</p>
+<p>&nbsp;</p>
+<h6></h6>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~vjaneja">Vandana Janeja</a>, PhD, Rutgers University (<a href="mailto:vjaneja@umbc.edu">vjaneja@umbc.edu</a>) [Associate Professor]</h6>
+<p><a href="http://userpages.umbc.edu/~vjaneja/" target="_blank" rel="attachment wp-att-532"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/image002-1-150x150.jpg" alt="image002 (1)" width="150" height="150" /></a>My area of interest is Data mining specifically anomaly detection and spatio-temporal data mining. Overall, my work has focused on advancing theoretical research motivated by practical applications.  As a result, I have had the opportunity to participate in the various aspects of high impact and national interest projects with various government agencies and private organizations. My research has always resulted in strong proof of concepts in real world applications with underlying strong theoretical foundations. Most of this work has been possible due to the diligent work of my students. Some of my current students and their ongoing research projects are highlighted in the following. Please look at the <a href="http://userpages.umbc.edu/~vjaneja/Publications_and_Presentations.htm">publications</a> list for more details.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~georgek/" target="_blank">George Karabatis</a>, PhD, University of Houston (<a href="mailto:georgek@umbc.edu">georgek@umbc.edu</a>) [Associate Professor] [Associate Chair for Academic Affairs]</h6>
+<p><a href="http://userpages.umbc.edu/~georgek/" target="_blank" rel="attachment wp-att-540"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/GKfall2012-150x150.jpg" alt="GKfall2012" width="150" height="150" /></a>George Karabatis is an Associate Professor of Information Systems at the University of Maryland, Baltimore County (UMBC). He holds degrees in Computer Science (Ph.D. and M.S.) and Mathematics (B.S.). His research interests are on various aspects of database systems, including semantic information integration,  and applications for mobile handheld devices. Before joining UMBC he was a Research Scientist at Telcordia Technologies (formerly Bellcore) working on database related research for the telecom industry. His research work has been published in journals (such as Journal of Database Management, Decision Support Systems, Information Systems Frontier, Distributed and Parallel Databases, IEEE Computer), conference proceedings and book chapters.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://www.andisplanet.com/" target="_blank">Andrea Kleinsmith</a>, PhD, University College London, UK (andreak@umbc.edu)  [Assistant Professor]</h6>
+<p><a href="http://informationsystems.umbc.edu/files/2013/02/A.Kleinsmith-Headshot.png"><img class="alignleft size-thumbnail wp-image-2987" src="http://informationsystems.umbc.edu/files/2013/02/A.Kleinsmith-Headshot-150x150.png" alt="A.Kleinsmith-Headshot" width="160" height="175" /></a>Andrea Kleinsmith is an Assistant Professor in the Department of Information Systems. Andrea&#8217;s primary research interests are in Human-Computer Interaction and Affective Computing and focus on measuring and modeling body expressions in real world training situations. In one area, she examines human behaviors such as empathy<br />
+that may be understood from medical students’ interactions with virtual patient training systems. In another area, she models users’ body expressions in order to endow systems with the ability to automatically recognize affect from the body. Andrea&#8217;s current aim is to build affect recognition training systems for complex real world situations in the wild with populations such as first responders and other emergency services. Dr. Kleinsmith has held postdoctoral researcher positions in the Virtual Experiences Research Group in the Computer and Information Science and Engineering Department at the University of Florida and in the Embodied AudioVisual Interaction Group at Goldsmiths, University of London in the UK. She received a PhD in Computer Science from University College London, UK, an MSc in Computer Science from the University of Aizu in Japan, and a BA in Psychology from the University of Oregon.</p>
+<p><a href="http://userpages.umbc.edu/~komlodi">Anita Komlodi</a>, PhD, University of Maryland (<a href="mailto:komlodi@umbc.edu">komlodi@umbc.edu</a>) [Associate Professor]</p>
+<p style="text-align: left"><a href="http://userpages.umbc.edu/~komlodi/" target="_blank" rel="attachment wp-att-545"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/RAPkomlodi-150x150.jpg" alt="RAPkomlodi" width="150" height="150" /></a>Anita Komlodi is Associate Professor. Dr. Komlodi&#8217;s research interests fall in the area of Human-Centered Computing. The first area of concentration is at the intersection of Human-Centered Computing and Information Retrieval/Information Behavior and focuses on the study of Human Information Behavior and the design of user interfaces for information systems. Dr. Komlodi is also interested in the needs of diverse user groups go technology: age, gender, and cultural differences in technology interactions. Dr. Komlodi&#8217;s teaching reflects these interests in courses on Human-Centered Computing, Web Design, and User Interfaces for Information Retrieval and Visualization.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://drkoru.us/" target="_blank">A. Gunes Koru</a>, PhD, Southern Methodist University (<a href="mailto:gkoru@umbc.edu">gkoru@umbc.edu</a>) [Associate Professor]</h6>
+<p><a href="http://drkoru.us/index.html" target="_blank" rel="attachment wp-att-550"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/IMG-1440-150x150.jpg" alt="IMG-1440" width="150" height="150" /></a>Dr. Koru is a tenured associate professor in the Department of Information Systems at UMBC. His research interests generally fall under health information technologies, health information privacy and security, IT in Health Services, and software engineering. He teaches a number of related courses at the undergraduate and graduate levels.</p>
+<p>He received a PhD degree and an MS Degree in Computer Science and Software Engineering, respectively, from the Southern Methodist University (SMU), Dallas, Texas. He received an MS Degree in Computer Engineering from Dokuz Eylul University, Izmir, Turkey and a B.Sc. Degree in Computer Engineering from Ege University, Izmir, Turkey.  He is a member of AMIA. He serves in the Policy Board for Health Information Exchange organized by the State of Maryland’s Maryland Health Care Commission (MHCC).</p>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~rkuber">Ravi Kuber</a>, PhD, Queen&#8217;s University Belfast, Northern Ireland (<a href="mailto:rkuber@umbc.edu">rkuber@umbc.edu</a>) [Associate Professor]</h6>
+<p><a href="http://userpages.umbc.edu/~rkuber/" target="_blank" rel="attachment wp-att-556"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/rav2-150x150.jpg" alt="rav2" width="150" height="150" /></a>Ravi Kuber is an Associate Professor of Information Systems, UMBC. His research examines the ways that the sense of touch can be used within an interface, when the user&#8217;s visual channel is blocked, restricted or overloaded. He has designed haptic and multimodal interfaces to support individuals who are blind and older adults to overcome the barriers faced when accessing graphical user interfaces. He has also examined ways to develop tactile feedback to augment the process of mobile interaction. Other areas of interest include applying non-visual technologies to address the trade-offs associated with authentication. He received his Ph.D. from <a href="http://www.qub.ac.uk/">Queen&#8217;s University Belfast</a>, Northern Ireland, and M.Sc. and B.Sc. degrees from <a href="http://www.ucl.ac.uk/">University College London</a>, UK.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="http://userpages.umbc.edu/~lutters">Wayne Lutters</a>, PhD, University of California-Irvine (<a href="mailto:lutters@umbc.edu">lutters@umbc.edu</a>) [Associate Professor]</p>
+<p><i><a href="http://userpages.umbc.edu/~lutters/" target="_blank" rel="attachment wp-att-559"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/WGL597-150x150.jpg" alt="WGL597" width="150" height="150" /></a>To deepen understanding of social action and technical design in sociotechnical systems…</i></p>
+<p>Computer-supported cooperative work (CSCW): (1.  Ethnographic/Ethnomethodological studies of work, 2.  Expertise management, 3. Organizational memory, 4. Information reuse)</p>
+<p>Social Informatics. Social computing, online communities, computer-mediated communication. Virtual organizing.  Collaborative technologies in the home. History of technology</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6>Jeffrey D. Martens, MS, College of William and Mary (<a href="mailto:jmartens@umbc.edu">jmartens@umbc.edu</a>) [Lecturer]</h6>
+<p><a href="http://userpages.umbc.edu/~jmartens/" target="_blank" rel="attachment wp-att-564"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/05f38391-150x150.jpg" alt="05f3839" width="150" height="150" /></a>My primary interests include networking, functional programming, and privacy.</p>
+<p><a href="http://userpages.umbc.edu/~jmartens/courses/is247/" target="_blank" rel="attachment wp-att-565"><img class="aligncenter" src="http://informationsystems.umbc.edu/files/2013/01/136547.strip_-300x93.gif" alt="136547.strip" width="300" height="93" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://www.cc.gatech.edu/~akmassey/" target="_blank">Aaron Massey</a>, PhD, North Carolina State University (akmassey@umbc.edu) [Assistant Professor]</h6>
+<p><a href="http://informationsystems.umbc.edu/files/2013/02/GT-OfficeHeadshot-1000x1000.jpg"><img class="alignleft size-thumbnail wp-image-2974" src="http://informationsystems.umbc.edu/files/2013/02/GT-OfficeHeadshot-1000x1000-150x150.jpg" alt="GT-OfficeHeadshot-1000x1000" width="150" height="150" srcset="http://informationsystems.umbc.edu/files/2013/02/GT-OfficeHeadshot-1000x1000-150x150.jpg 150w, http://informationsystems.umbc.edu/files/2013/02/GT-OfficeHeadshot-1000x1000-300x300.jpg 300w, http://informationsystems.umbc.edu/files/2013/02/GT-OfficeHeadshot-1000x1000.jpg 1000w" sizes="(max-width: 150px) 100vw, 150px" /></a>Aaron Massey is an Assistant Professor of Software Engineering at UMBC and the Co-Director of ThePrivacyPlace.org. His research interests include computer security, privacy, software engineering, and regulatory compliance in software systems. Aaron is a recipient of the Walter H. Wilkinson Graduate Research Ethics Fellowship and a recipient of a Google Policy Fellowship. Before coming to UMBC, he was a Postdoctoral Fellow at Georgia Tech’s School of Interactive Computing. Aaron earned a PhD and MS in Computer Science from North Carolina State University and a BS in Computer Engineering from Purdue University. He is a member of the ACM, IEEE, IAPP, and the USACM Public Policy Council.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~mentis/index.html" target="_blank">Helena Mentis</a>, PhD, Penn State University (<a href="mailto:mentis@umbc.edu">mentis@umbc.edu</a>) [Assistant Professor]</h6>
+<p><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/faculty/mentis/" rel="attachment wp-att-2136"><img class="alignleft size-thumbnail wp-image-2136" src="http://informationsystems.umbc.edu/files/2013/02/Mentis-150x150.png" alt="Mentis" width="150" height="150" /></a>I am an assistant professor in the Department of Information Systems.  My research interests span the areas of human-computer interaction, computer supported cooperative work, and biomedical informatics.  I specifically focus on engaging in a translational research approach to align coordinated clinical practices with information technology such as gestural interaction in the OR, informal data sharing in the emergency room, and health information sharing between chronically ill patients and their caregivers.  My current work is on the design and coordinated use of interactive surgical systems, specifically in minimally invasive surgical practices.  I&#8217;ve held postdoctoral and research fellow positions at Harvard Medical School and the Cambridge Health Alliance, at <a href="http://cambridge.academia.edu/HelenaMentis" target="_blank">University of Cambridge</a> and <a href="http://research.microsoft.com/en-us/labs/cambridge/whyiworkatmsrc/mentis.aspx" target="_blank">Microsoft Research Cambridge</a>, and at the Swedish Institute of Computer Science.  I received a PhD in Information Sciences and Technology from The Pennsylvania State University, MS in Communication from Cornell, and BS in Psychology from Virginia Tech.</p>
+<h6></h6>
+<h6> <a href="http://userpages.umbc.edu/~norcio">Anthony F. Norcio</a>, PhD, Catholic University of America (<a href="mailto:norcio@umbc.edu">norcio@umbc.edu</a>) [Professor]</h6>
+<p><a href="http://userpages.umbc.edu/~norcio/" target="_blank" rel="attachment wp-att-571"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/afnncdc-150x150.jpg" alt="OLYMPUS DIGITAL CAMERA" width="150" height="150" /></a>Dr. Anthony F. Norcio is a Professor in the <a href="http://www.is.umbc.edu/">Department of Information Systems</a> at the <a href="http://www.umbc.edu/">University of Maryland Baltimore County (UMBC)</a>. Dr. Norcio has served as the Co-Director (with Dr. Marion J. Ball) of the Pan American Health Organization <a href="http://www.paho.org/">(PAHO)/</a>World Health Organization <a href="http://www.who.ch/">(WHO)</a> <a href="http://umbc7.umbc.edu/~norcio/whocc/index.html">Collaborating Center for Health Informatics</a>. Dr. Norcio has served as an external advisor to <a href="http://www.paho.org/">Pan American Health Organization</a> on computing and health informatics and has served in a similar capacity to the <a href="http://www.iadb.org/">Inter-American Development Bank (IDB)</a>. He has also served as a Computer Scientist at the <a href="http://www.aic.nrl.navy.mil/">Artificial Intelligence Center </a>of the <a href="http://www.nrl.navy.mil/">Naval Research Laboratory</a>; and he has also served as the Scientific Advisor to the <a href="http://www.onr.navy.mil/sci_tech/information/311_math/">Mathematical, Computer, and Information Sciences Division</a> of the <a href="http://www.onr.navy.mil/">Office of Naval Research</a>. He regularly serves on planning and program committees for national and international conferences. Dr. Norcio&#8217;s research interests are in the theoretical and applied areas of software/systems design, intelligent users interfaces (including voice systems), and health informatics.</p>
+<p>&nbsp;</p>
+<p><a href="http://userpages.umbc.edu/~ozok">Ant Ozok</a>, PhD, Purdue University (<a href="mailto:ozok@umbc.edu">ozok@umbc.edu</a>) [Associate Professor]</p>
+<p><a href="http://userpages.umbc.edu/~ozok/" target="_blank" rel="attachment wp-att-574"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/CoverPicture-150x150.jpg" alt="CoverPicture" width="150" height="150" /></a>My areas of <small>research </small>interest include usability testing, user preferences and Human Computer Interaction (HCI) applications in the domains of World-Wide-Web, mobile computing, electronic and mobile commerce, online communities, and health care. My recent publications appeared in <a href="http://www.tandf.co.uk/journals/tf/0144929X.html">Behaviour and Information Technology</a>, <a href="http://www.leaonline.com/loi/ijhc">International Journal of Human Computer Interaction</a>, <a href="http://www.leaonline.com/loi/joce">Journal of Organizational Computing and Electronic Commerce</a>, and the <a href="http://crcpress.com/shopping_cart/products/product_detail.asp?sku=ER9314&amp;isbn=9780805858709&amp;parent_id=&amp;pc=">Human Computer Interaction Handbook Second Edition</a>. I am currently on the Editorial Board of <a href="http://www.leaonline.com/loi/ijhc">International Journal of Human Computer Interaction</a>, and Associate Editor of <a href="http://www.inderscience.com/browse/index.php?journalCODE=ijef">International Journal of Electronic Finance</a>and <a href="http://www.inderscience.com/browse/callpaper.php?callID=1014">Electronic Government: An International Journal</a>. My recently funded research is focused on the topics including technology perceptions among middle school students with a gender emphasis supported by the <a href="http://nsf.gov/">National Science Foundation (NSF)</a> and investigation of technology-supported medication adherence among the elderly population supported by Erickson Retirement Communities, among others.</p>
+<h6></h6>
+<p><a href="http://nlp-lab.umbc.edu/home/shimei/" target="_blank">Shimei Pan</a>, PhD, Columbia University (<a href="mailto:shimei@umbc.edu" target="_blank">shimei@umbc.edu</a>) [Assistant Professor]</p>
+<p><a href="http://informationsystems.umbc.edu/files/2013/02/IUI15.png"><img class="alignleft size-thumbnail wp-image-2653" src="http://informationsystems.umbc.edu/files/2013/02/IUI15-150x150.png" alt="IUI15" width="150" height="150" /></a></p>
+<p>Dr. Shimei Pan received a Ph.D. in Computer Science from Columbia University in New York City. Before joining UMBC, Dr. Pan was a research scientist at IBM T. J Watson research center in Yorktown Heights, New York. Her primary research interests are natural language processing, intelligent user interfaces and user modeling. Currently, she is working on interactive machine learning and data mining (e.g., combining text analytics with data visualization to facilitate large-scale interactive text exploration) and social media-based user modeling (e.g., social media-based personal trait, emotion, behavior and expertise modeling). Previously, she has worked on applying natural language processing to insider threat detection, email analytics and intelligent multimedia multimodal conversation systems.</p>
+<p>.</p>
+<p>&nbsp;</p>
+<p><a href="http://userpages.umbc.edu/~redding">Tate Redding</a>, MS, Johns Hopkins University (<a href="mailto:redding@umbc.edu">redding@umbc.edu</a>) [Senior Lecturer]</p>
+<p><a href="http://userpages.umbc.edu/~redding/Welcome.html" target="_blank" rel="attachment wp-att-582"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/t_Tate_Redding_544710-150x150.jpeg" alt="t_Tate_Redding_544710" width="150" height="150" /></a>Mr. Redding has been at UMBC since September of 1982. Currently he is a Senior Lecturer and former Director of the Undergraduate Programs in the Information Systems Department.  Areas of Interest: Information Systems Security, microcomputer based systems, the use of technology to teach technology.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6> <a href="http://userpages.umbc.edu/~nroy" target="_blank">Nirmalya Roy</a>, PhD, University of Texas at Arlington (<a href="mailto:nroy@umbc.edu" target="_blank">nroy@umbc.edu</a>) [Assistant Professor]</h6>
+<p><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/faculty/download-27/" rel="attachment wp-att-1926"><img class="alignleft size-thumbnail wp-image-1926" src="http://informationsystems.umbc.edu/files/2013/02/download-27-150x150.jpg" alt="download (27)" width="150" height="150" /></a></p>
+<p>Nirmalya Roy is an Assistant Professor in the <a href="http://www.is.umbc.edu/">Department of Information Systems</a> at the <a href="http://www.umbc.edu/">University of Maryland, Baltimore County (UMBC)</a>. His current research interests include pervasive healthcare, sensor-driven health and green technologies, design and modeling of smart environments, and mobile and pervasive systems. He directs the <a href="http://mpsc.umbc.edu/" target="_blank">Mobile, Pervasive and Sensor Computing (MPSC)</a> group at UMBC. He received his Ph.D. and M.S. in <a href="http://www.cse.uta.edu/">Computer Science and Engineering</a> from the <a href="http://www.uta.edu/">University of Texas at Arlington</a> in 2008 and 2004 respectively.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~sampath">Sreedevi Sampath</a>, PhD, University of Delaware (<a href="mailto:sampath@umbc.edu">sampath@umbc.edu</a>) [Associate Professor] [Director of Undergraduate Programs]</h6>
+<p><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/faculty/attachment/4/" rel="attachment wp-att-2210"><img class="alignleft size-thumbnail wp-image-2210" src="http://informationsystems.umbc.edu/files/2013/02/4-150x150.jpg" alt="4" width="150" height="150" /></a>Dr. Sreedevi Sampath is an Associate Professor of Information Systems at the University of Maryland Baltimore County (UMBC). Her research is in the broad area of software engineering, with specific emphases on software testing, web applications, security, program analysis, and empirical studies. She holds a Ph.D. and M.S. in Computer and Information Sciences from the University of Delaware, USA, and a B.E. from Osmania University, India. Her research is supported by external grants from federal funding agencies, such as the National Institute of Standards and Technology (NIST).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~cseaman">Carolyn Seaman</a>, PhD, University of Maryland (<a href="mailto:cseaman@umbc.edu">cseaman@umbc.edu</a>) [Associate Professor] [Associate Director of Undergraduate Programs and Advising Coordinator]</h6>
+<p><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/image001/" rel="attachment wp-att-592"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/image001-150x150.jpg" alt="image001" width="150" height="150" /></a>Dr. Seaman is an Associate Professor of Information Systems at the University of Maryland Baltimore County (UMBC). Her research generally falls under the umbrella of empirical studies of software engineering, with particular emphases on maintenance, organizational structure, communication, measurement, COTS-based development, and qualitative research methods. She holds a PhD in Computer Science from the University of Maryland, College Park, a MS in Information and Computer Science from Georgia Tech, and a BA in Computer Science and Mathematics from the College of Wooster (Ohio). She has worked in the software industry as a software engineer and consultant, and has conducted most of her research in industrial and governmental settings (e.g. IBM Canada Ltd., NASA, Xerox).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Dana Smith, MS, UMBC (<a href="mailto:dasmith@umbc.edu">dasmith@umbc.edu</a>) [Lecturer]</p>
+<p><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/fbicon215/" rel="attachment wp-att-596"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/fbICON215-150x150.gif" alt="fbICON215" width="150" height="150" /></a>human-centered computing</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6>Richard Sponaugle, UMBC (rspona1@umbc.edu) [Lecturer]</h6>
+<p><a href="http://informationsystems.umbc.edu/files/2013/02/me.jpg"><img class="alignleft size-thumbnail wp-image-2682" src="http://informationsystems.umbc.edu/files/2013/02/me-150x150.jpg" alt="me" width="150" height="150" /></a>Richard Sponaugle has A.A. degrees in Hospitality Management and Computer Science from Montgomery College and a B.S. and M.S.  in Information Systems from UMBC.  He has been associated with UMBC for almost twenty years, working as a staff member, and then later as part time and full time faculty.   In addition to his academic background, he has industry experience in systems development and management.  His main teaching interests are in the areas of business management and ethics, programming, and systems analysis and development.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6><b><a href="http://userpages.umbc.edu/~jianwu/" target="_blank">Jianwu Wang</a>, PhD, Institute of Computing Technology, Chinese Academy of Sciences (<a href="mailto:jianwu@umbc.edu" target="_blank">jianwu@umbc.edu</a>) [Assistant Professor]</b></h6>
+<p><a href="http://informationsystems.umbc.edu/files/2013/02/jianwu.jpg"><img class="alignleft size-thumbnail wp-image-2972" src="http://informationsystems.umbc.edu/files/2013/02/jianwu-150x150.jpg" alt="jianwu" width="150" height="150" srcset="http://informationsystems.umbc.edu/files/2013/02/jianwu-150x150.jpg 150w, http://informationsystems.umbc.edu/files/2013/02/jianwu-300x300.jpg 300w, http://informationsystems.umbc.edu/files/2013/02/jianwu-1024x1024.jpg 1024w" sizes="(max-width: 150px) 100vw, 150px" /></a>Dr. Jianwu Wang is an Assistant Professor on Data Science in the <a href="http://informationsystems.umbc.edu/">Department of Information Systems</a> at the <a href="http://www.umbc.edu/">University of Maryland, Baltimore County (UMBC)</a>. He is also an Adjunct Professor at <a href="http://www.ncut.edu.cn/">North China University of Technology</a>. His research interests include Big Data, Scientific Workflow, Distributed Computing, Service-Oriented Computing and End-User Programming. He has published more than 50 papers with over 500 citations. He is Associate Editor or Editorial Board Member of four international journals, Co-Chair of three international workshops. He has been serving as Program Committee member for over 30 conferences/workshops, and reviewer of over 10 journals or books. Before joining the UMBC, he worked as a scientist at the <a href="http://www.ucsd.edu/">University of California, San Diego (UCSD)</a> and a main researcher for <a href="http://kepler-project.org/">the Kepler open source scientific workflow system</a>, one of the most cited and well-adopted scientific workflow products. He received his Ph.D. degree in Computer Science from the <a href="http://www.ict.cas.cn/">Institute of Computing Technology (ICT)</a>, the <a href="http://www.cas.cn/">Chinese Academy of Sciences (CAS)</a> and B.S. in Computer Science from <a href="http://www.tju.edu.cn/">Tianjin University</a>.</p>
+<p>&nbsp;</p>
+<h6> <a href="http://userpages.umbc.edu/~zhangd">Dongsong Zhang</a>, PhD, University of Arizona (<a href="mailto:zhangd@umbc.edu">zhangd@umbc.edu</a>) [Professor] [Graduate Program Director, Online MS]</h6>
+<p><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/faculty/dongsong_1/" rel="attachment wp-att-725"><img class="alignleft size-thumbnail wp-image-725" src="http://informationsystems.umbc.edu/files/2013/02/Dongsong_1-150x150.jpg" alt="Dongsong_1" width="150" height="150" /></a>Dr. Dongsong Zhang is a Professor in the <a href="http://www.is.umbc.edu/">Department of Information Systems</a> at the <a href="http://www.umbc.edu/">University of Maryland, Baltimore County</a>. He received a Ph.D. in <a href="http://mis.eller.arizona.edu/cgi-bin/web/about/index.cgi">Management Information Systems</a> from <a href="http://www.arizona.edu/">the University of Arizona</a>. His current research interests include context-aware mobile computing, computer-mediated collaboration and communication, knowledge management, and e-Business. He has published over 130 research articles in journals and conference proceedings, including premier journals such as MIS Quarterly, Communications of the ACM (CACM), Journal of Management Information Systems (JMIS), IEEE Transactions on Knowledge and Data Engineering (TKDE), IEEE Transactions on Software Engineering, IEEE Transactions on Multimedia, IEEE Transactions on Systems, Man, and Cybernetics, IEEE Transactions on Professional Communication, Decision Support Systems, Information &amp; Management, Journal of the American Society for Information Science and Technology, among others. He has received research grants and awards from National Science Foundation (NSF), National Institute of Health (NIH), National Natural Science Foundation of China, Chinese Academy of Sciences, Google Inc., the Royal Society of British, and UMBC, etc.</p>
+<p>&nbsp;</p>
+<h6><a href="http://userpages.umbc.edu/~zhoul">Lina Zhou</a>, PhD, Beijing University, China (<a href="mailto:zhoul@umbc.edu">zhoul@umbc.edu</a>) [Associate Professor]</h6>
+<p><a href="http://userpages.umbc.edu/~zhoul/" target="_blank" rel="attachment wp-att-606"><img class="alignleft" src="http://informationsystems.umbc.edu/files/2013/01/IMG_0361-150x150.jpg" alt="IMG_0361" width="150" height="150" /></a>Lina Zhou is an Associate Professor of Information Systems, University of Maryland, Baltimore County. Her research aims to improve knowledge management and human decision making by designing and developing intelligent technologies. Her current research interests include deception detection, group communication, online social networks, and ontology and the Semantic Web. Dr. Zhou has published over 30 referred papers in journals such as <i>Journal of Management Information Systems, Communications of the ACM, Information &amp; Management, IEEE Transactions, Decision Support Systems, Group Decision and Negotiation, and Small Group Research </i>. She is a member of the editorial board of <i>the Journal of Database Management</i>, <i>Information System Frontiers</i>,<i>Electronic Commerce Research and Applications</i>, <i>Security Informatics</i>, and <i>International Journal on Semantic Web and Information Systems</i>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h6></h6>
+<h5>Faculty Emeriti</h5>
+<p>Valeri P. Scott (<a href="mailto:vscott@umbc.edu">vscott@umbc.edu</a>) [Lecturer Emeritus]</p>
+<p>Henry Emurian (<a href="mailto:emurian@umbc.edu">emurian@umbc.edu</a>) (Associate Professor Emeritus)</p>
+<p>Roy Rada (<a href="mailto:rada@umbc.edu">rada@umbc.edu</a>) (Professor Emeritus)</p>
+                      </article>
+    </section>
+  </section>
+    <section class="page-sidebar">
+    <nav role="navigation" class="sidebar-nav">
+      <ul id="menu-main-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-page-ancestor menu-item-89"><a href="http://informationsystems.umbc.edu/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2265"><a href="http://informationsystems.umbc.edu/about/">About</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1238"><a href="http://informationsystems.umbc.edu/home/welcome-2/message-from-the-chair/">Message from the Chair</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-789"><a href="http://informationsystems.umbc.edu/home/welcome-2/department-of-information-systems-faq/">FAQ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3053"><a href="http://informationsystems.umbc.edu/about/employment-opportunities/">Employment Opportunities</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1104"><a href="http://informationsystems.umbc.edu/about/innovation/">Innovation</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1297"><a href="http://informationsystems.umbc.edu/about/innovation/teaching-innovation-archive/">Teaching Innovation Archive</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2581"><a href="http://informationsystems.umbc.edu/2576-2/">Welcome Military and Veteran Students</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-111"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/">Undergraduate</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-292"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/">Undergraduate Degree Programs</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-968"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/bachelor-of-arts-in-business-technology-administration/">BA in Business Technology Administration</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2187"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/bachelor-of-arts-in-business-technology-administration-declared-prior-to-fall-2012/">BA in Business Technology Administration &#8211; Declared Prior to Fall 2012</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-975"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/bachelor-of-science-in-information-systems/">Bachelor of Science in Information Systems</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-997"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/combined-bachelor-of-arts-in-business-technology-administrationhuman-centered-computing-master-of-science/">Combined BA in Business Technology Administration/Human-Centered Computing MS</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-996"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/combined-bachelor-of-sciencemaster-of-science/">Combined Bachelor of Science/Master of Science</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1139"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/combined-bachelor-of-sciencehuman-centered-computing-master-of-science/">Combined Bachelor of Science/Human Centered Computing Master of Science</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1007"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-degree-programs/minor-in-information-systems/">Minor in Information Systems</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/the-alex-brown-center-entrepreneurship-and-innovation-minor/">Entrepreneurship and Innovation Minor</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3316"><a href="http://informationsystems.umbc.edu/certificate-programs/">Certificate Programs</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-310"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-upper-division-certificates/">IS Upper Division Certificates</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-management-and-business-program/">Management Certificates</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3375"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-course-listing/">Undergraduate Course Listing</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3568"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-forms/">Undergraduate Forms</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-768"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/academic-honors-scholarships-and-resources/">Academic Honors, Scholarships and Resources</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-780"><a href="http://informationsystems.umbc.edu/home/undergraduate-programs/undergraduate-research-opportunities/">Undergraduate Research Opportunities</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-145"><a href="http://informationsystems.umbc.edu/home/graduate-programs/">Graduate Programs</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-403"><a href="http://informationsystems.umbc.edu/home/graduate-programs/master-of-science-programs/">Master of Science Programs</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-834"><a href="http://informationsystems.umbc.edu/home/graduate-programs/master-of-science-programs/master-of-science-in-information-systems/">Master of Science in Information Systems</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a href="http://informationsystems.umbc.edu/home/graduate-programs/online-masters-in-information-systems/">Online Master&#8217;s in Information Systems</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842"><a href="http://informationsystems.umbc.edu/home/graduate-programs/master-of-science-programs/master-of-science-in-human-centered-computing-hcc/">Master of Science in Human-Centered Computing (HCC)</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-408"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/">Doctor of Philosophy Programs</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3784"><a href="http://informationsystems.umbc.edu/doctor-of-philosophy-in-information-systems-page-1/">Doctor of Philosophy in Information Systems</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-950"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/doctor-of-philosophy-in-information-systems/is-comprehensive-review-policy/">IS Comprehensive Review Policy</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3131"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/doctor-of-philosophy-in-human-centered-computing-hcc/">Doctor of Philosophy in Human-Centered Computing (HCC)</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-855"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/human-centered-computing-comprehensive-review-policy/">Human-Centered Computing Comprehensive Review Policy</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1250"><a href="http://informationsystems.umbc.edu/home/graduate-programs/doctor-of-philosophy-programs/academic-integrity-policies-for-phd-comprehensive-exams-both-is-and-hcc-phd-programs/">Academic Integrity Policies for PhD Comprehensive Exams (BOTH IS and HCC PhD Programs)</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3373"><a href="http://informationsystems.umbc.edu/home/graduate-programs/graduate-forms/">Graduate Program Forms</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3374"><a href="http://informationsystems.umbc.edu/home/graduate-programs/graduate-course-listing/">Graduate Course Listing</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-186"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/">People</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-685 current_page_item menu-item-687"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/faculty/">Full Time Faculty</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1146"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/part-time-faculty/">Part Time Faculty</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1154"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/special-status-faculty/">Special Status Faculty</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-621"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/graduate-and-research-assistants/">Graduate and Research Assistants</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-624"><a href="http://informationsystems.umbc.edu/home/faculty-and-staff/staff/">Staff</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-189"><a href="http://informationsystems.umbc.edu/home/research/">Research</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1578"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/">Areas of Research</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1583"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/artificial-intelligence-and-knowledge-management/">Artificial Intelligence and Knowledge Management</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1595"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/database-and-datamining/">Database and Datamining</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1611"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/hit/">Health Information Technology</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/human-centered-computing/">Human-Centered Computing</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1628"><a href="http://informationsystems.umbc.edu/home/research/areas-of-research/systems-and-software/">Software Engineering</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-660"><a href="http://informationsystems.umbc.edu/home/research/current-extramural-funded-projects/">Externally Funded Projects</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2431"><a href="http://informationsystems.umbc.edu/home/research/department-research-seminar-series/">Department Research Seminar Series</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-193"><a href="http://informationsystems.umbc.edu/home/media/">Media</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2545"><a href="http://informationsystems.umbc.edu/about/publications/">Publications</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1973"><a href="http://informationsystems.umbc.edu/home/media/photo-gallery/">Photo Gallery</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1979"><a href="http://informationsystems.umbc.edu/home/media/poster-gallery/">Poster Gallery</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1983"><a href="http://informationsystems.umbc.edu/home/media/presentation-gallery/">Presentation Gallery</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3075"><a href="http://informationsystems.umbc.edu/about/ant-ozoks-daily-record-interview/">Ant Ozok&#8217;s Daily Record Interview</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2524"><a href="http://informationsystems.umbc.edu/about/ant-ozoks-apprearance-the-kojo-nnamdi-show/">Ant Ozok&#8217;s Apprearance The Kojo Nnamdi Show</a></li>
+</ul>
+</li>
+</ul>    </nav>
+    <section class="sidebar-widgets">
+          </section>
+  </section></section>
+      
+      <footer role="contentinfo" id="site-footer">
+           
+      </footer>   
+    </div> <!-- #container -->
+    <footer role="contentinfo" id="umbc-footer">
+      <div id="umbc-footer-logo"><a href="http://umbc.edu" title="UMBC: An Honors University in Maryland"><span>UMBC: An Honors University in Maryland</span></a></div>
+      <nav id="umbc-footer-nav">
+        <ul id="umbc-footer-nav-items">
+          <li><a href="http://about.umbc.edu/">About UMBC</a></li>
+          <li><a href="http://about.umbc.edu/visitors-guide/contact-us/">Contact Us</a></li>
+          <li><a href="http://umbc.edu/go/equal-opportunity">Equal Opportunity</a></li>
+                    <li>Follow UMBC: <a href="https://www.facebook.com/umbcpage" id="umbc-footer-facebook" title="Follow on Facebook"><span class="none">Facebook</span></a> <a href="http://twitter.com/umbc" id="umbc-footer-twitter" title="Follow on Twitter"><span class="none">Twitter</span></a> <a href="http://umbc.edu/news" id="umbc-footer-news" title="UMBC News"><span class="none">UMBC News</span></a></li>
+                  </ul>
+      </nav>
+      <div id="umbc-footer-info">&copy; University of Maryland, Baltimore County <span class="bullet">&bull;</span> 1000 Hilltop Circle <span class="bullet">&bull;</span> Baltimore, MD 21250</div>
+    </footer>
+    <script type='text/javascript' src='http://informationsystems.umbc.edu/wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
+  </body>
+</html>
