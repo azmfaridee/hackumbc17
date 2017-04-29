@@ -73,22 +73,23 @@ def main(in_file, out_folder, save):
     start_time_lsa = time.time()
     #lsa, X_lsa = LSA(stopset, docs)
     U, Sigma, VT, terms = LSA(stopset, docs)
-    print (type(terms))
+
     time_taken_lsa = time.time() - start_time_lsa
 
-    print (U.shape, VT.transpose().shape)
+    print ("Docs: " ,U.shape, "Terms: ", VT.transpose().shape)
     #print("LSA variance:" + str("%.2f" % (sum(lsa.explained_variance_) * 100)))
     print("Time: " + str("%.2f" % time_taken_lsa) + "sec")
     print("*****************************")
     print("\n")
-    f = open('/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/terms.txt', 'w')
-    for item in terms:
-        f.write("%s\n" % item)
+
 
     if save == 1:
         np.savetxt(out_folder + "term_mat_U.csv",VT.transpose(), delimiter=",")
         np.savetxt(out_folder + "doc_mat_V.csv", U, delimiter=",")
         #np.savetxt(out_folder + "terms.csv", terms, delimiter=",")
+        f = open('/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/terms.txt', 'w')
+        for item in terms:
+            f.write("%s\n" % item)
 
     # compute tweet-tweet distance matrix
     #print("Tweet Distance:")
@@ -130,6 +131,6 @@ def main(in_file, out_folder, save):
     # conceptTerms(terms, lsa)
 
 
-in_file = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/projects.txt"
+in_file = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/faculty.txt"
 out_folder = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/projects/"
-main(in_file, out_folder, 1)
+main(in_file, out_folder, 0)
