@@ -130,6 +130,6 @@ def main(in_file, out_folder, save):
     # conceptTerms(terms, lsa)
 
 
-in_file = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/faculty.txt"
-out_folder = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/"
+in_file = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/projects.txt"
+out_folder = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/projects/"
 main(in_file, out_folder, 1)
