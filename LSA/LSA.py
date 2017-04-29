@@ -21,9 +21,11 @@ def LSA(stopset, docs):
     # Vectorize the tweets with tf-idf weights where each row is a tweet and each column is a word
     vectorizer = TfidfVectorizer(stop_words=stopset, min_df=1, max_df=.7, use_idf=True, ngram_range=(1, 1))
     X = vectorizer.fit_transform(docs)
+    terms = vectorizer.get_feature_names()
+    #print terms
     U, Sigma, VT = randomized_svd(X, n_components=15,n_iter=5,random_state=1)
+    return U, Sigma, VT, terms
 
-    return U, Sigma, VT
 
 # computes distance (1-cosine similarity) between documents
 # input V matrix from LSA (rows = number of documents, columns = singular vectors)
@@ -70,18 +72,23 @@ def main(in_file, out_folder, save):
 
     start_time_lsa = time.time()
     #lsa, X_lsa = LSA(stopset, docs)
-    U, Sigma, VT = LSA(stopset, docs)
+    U, Sigma, VT, terms = LSA(stopset, docs)
+    print (type(terms))
     time_taken_lsa = time.time() - start_time_lsa
 
-    print (U.shape,VT.shape)
+    print (U.shape, VT.transpose().shape)
     #print("LSA variance:" + str("%.2f" % (sum(lsa.explained_variance_) * 100)))
     print("Time: " + str("%.2f" % time_taken_lsa) + "sec")
     print("*****************************")
     print("\n")
+    f = open('/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/terms.txt', 'w')
+    for item in terms:
+        f.write("%s\n" % item)
 
     if save == 1:
-        np.savetxt(out_folder + "X_lsa.csv", X_lsa, delimiter=",")
-        np.savetxt(out_folder + "X_lsa_variance.csv", lsa.explained_variance_, delimiter=",")
+        np.savetxt(out_folder + "term_mat_U.csv",VT.transpose(), delimiter=",")
+        np.savetxt(out_folder + "doc_mat_V.csv", U, delimiter=",")
+        #np.savetxt(out_folder + "terms.csv", terms, delimiter=",")
 
     # compute tweet-tweet distance matrix
     #print("Tweet Distance:")
@@ -124,5 +131,5 @@ def main(in_file, out_folder, save):
 
 
 in_file = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/faculty.txt"
-out_folder = "/Users/amritaanam/PycharmProjects/FlashFloodTwitter/train/"
-main(in_file, out_folder, 0)
+out_folder = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/"
+main(in_file, out_folder, 1)
