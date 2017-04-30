@@ -87,9 +87,9 @@ def main(in_file, out_folder, save):
         np.savetxt(out_folder + "term_mat_U.csv",VT.transpose(), delimiter=",")
         np.savetxt(out_folder + "doc_mat_V.csv", U, delimiter=",")
         #np.savetxt(out_folder + "terms.csv", terms, delimiter=",")
-        f = open('/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/terms.txt', 'w')
+        f = open(out_folder + 'terms.txt', 'w')
         for item in terms:
-            f.write("%s\n" % item)
+            f.write("%s\n" % item.encode('ascii', 'ignore').decode('ascii'))
 
     # compute tweet-tweet distance matrix
     #print("Tweet Distance:")
@@ -131,6 +131,6 @@ def main(in_file, out_folder, save):
     # conceptTerms(terms, lsa)
 
 
-in_file = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/projects.txt"
-out_folder = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/projects/"
-main(in_file, out_folder, 0)
+in_file = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/faculty.txt"
+out_folder = "/Users/amritaanam/Documents/GIT_Repo/hackumbc17/out_matrices/faculty/"
+main(in_file, out_folder, 1)
