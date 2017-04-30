@@ -1,4 +1,4 @@
-fid <- c(1,3,12,15)
+fid <- c(1,1,12,15)
 pid <- c(11,12,3,5)
 
 faculty_proj <- data.frame(fid,pid)
@@ -16,4 +16,14 @@ proj_sim <- data.frame(sim,pid)
 
 #for each faculty in the faculty_sim
 #find their proj_ids
-#for each 
+#for each proj_ids 
+#see if it is there in proj_sim
+#if yes pick the sim score for fac and proj and add
+
+for(i in 1:length(faculty_sim$fid)){
+  
+  finalsim <- faculty_sim$sim[i]
+  
+  p <- faculty_proj[faculty_proj$fid==faculty_sim$fid[i],2]
+  
+}
