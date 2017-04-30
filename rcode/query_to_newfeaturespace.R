@@ -8,8 +8,8 @@ library(tm)
 #ref: http://www.rdatamining.com/docs/twitter-analysis-with-r
 
 #query <- c('Stacy Branham is a Lecturer in the Department of Information Systems at UMBC. Dr. Branham\'s teaching focuses on making computing more appealing, accessible, and welcoming to first-year students towards increasing retention and diversity. Dr. Branham\'s research focuses on the role of computer technologies in mediating communication between significant others, friends, and colleagues. She works with populations that exhibit cross-cultural communication: people who are blind and people who are sighted; students and teachers; women and men. Through qualitative field studies and participant-observer engagements, she reflects on the design of technologies that can foster empathic communication--a form of talking that involves sharing, intimate connection, and mutual growth.')
-query <- c('My research interests include big data, workflow, distributed computing, user programming')
-
+#query <- c('My research interests include big data, workflow, distributed computing, user programming')
+query <- c('privacy')
 # build a corpus, and specify the source to be character vectors
 myCorpus <- Corpus(VectorSource(query))
 
@@ -42,11 +42,11 @@ names(tdmvec) <- rownames(tdm)
 ############################ term - newfeature matrix ####################################
 ##########################################################################################
 
-df <- read.csv("E:\\USA\\hackumbc2017\\hackumbc17\\out_matrices\\term_mat_U.csv",header = F)
+df <- read.csv("E:\\USA\\hackumbc2017\\hackumbc17\\out_matrices\\faculty\\term_mat_U.csv",header = F)
 m2 <- as.matrix(df)
 
 
-terms <- read.table("E:\\USA\\hackumbc2017\\hackumbc17\\out_matrices\\terms.txt")
+terms <- read.table("E:\\USA\\hackumbc2017\\hackumbc17\\out_matrices\\faculty\\terms.txt")
 corpbow <-as.vector(terms$V1)
 
 
@@ -108,7 +108,7 @@ cossim <- function(x,y){
   return(cs)
 }
 
-df1 <- read.csv("E:\\USA\\hackumbc2017\\hackumbc17\\out_matrices\\doc_mat_V.csv",header = F)
+df1 <- read.csv("E:\\USA\\hackumbc2017\\hackumbc17\\out_matrices\\faculty\\doc_mat_V.csv",header = F)
 v <- as.matrix(df1)
 
 similarity <- vector()
@@ -120,4 +120,7 @@ for( i in 1:nrow(v)){
 }
 
 
+simtemp <- similarity
+names(simtemp) <- c(1:length(similarity))
 
+order(simtemp, decreasing=TRUE)
