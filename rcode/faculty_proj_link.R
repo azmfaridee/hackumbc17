@@ -1,3 +1,17 @@
+fid <- c(1,1,12,15)
+pid <- c(11,12,3,5)
+
+faculty_proj <- data.frame(fid,pid)
+
+
+sim <- c(0.9,0.7,0.6,0.5,0.45) 
+fid <- c(1,10,12,13,15)
+faculty_sim <- data.frame(sim,fid)
+
+
+sim <- c(0.6,0.56,0.5,0.45,0.4) 
+pid <- c(12,11,8,3,1)
+proj_sim <- data.frame(sim,pid)
 
 
 #for each faculty in the faculty_sim
@@ -5,11 +19,32 @@
 #for each proj_ids 
 #see if it is there in proj_sim
 #if yes pick the sim score for fac and proj and add
+#w1 <- weight for fac sim
+#w2 <- weight for prac sim
+
+w1 <- 1
+w2 <- 1
+
+finalsim <- vector()
+
 
 for(i in 1:length(faculty_sim$fid)){
-  
-  finalsim <- faculty_sim$sim[i]
+  print(i)
+  finalsimtemp <- faculty_sim$sim[i] * w1
   
   p <- faculty_proj[faculty_proj$fid==faculty_sim$fid[i],2]
   
+  if(length(p)!=0){
+  for(j in 1:length(p)){
+    projsimtemp <- proj_sim[proj_sim$pid==p[j],1]
+    
+    if(length(projsimtemp)!=0){
+    finalsimtemp <- finalsimtemp + (projsimtemp * w2)}
+  }
+  }
+  
+  finalsim[i] <- finalsimtemp
 }
+
+finalres <- data.frame(faculty_sim$fid,finalsim)
+finalres[order(-finalres[,2]),]
