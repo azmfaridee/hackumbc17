@@ -109,7 +109,6 @@ aspx
 assess
 assessment
 asset
-assistance
 assisted
 assistive
 associated
@@ -361,7 +360,6 @@ depression
 depth
 derive
 describe
-description
 design
 designed
 designers
@@ -568,7 +566,6 @@ format
 formation
 formative
 formats
-forthcoming
 foster
 found
 foundation
@@ -719,7 +716,6 @@ ineffective
 inexpensive
 infer
 inferred
-information
 informed
 infrared
 infrastructure
