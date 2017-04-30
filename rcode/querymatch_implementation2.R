@@ -23,6 +23,17 @@ proj_sim <- proj_sim[order(-proj_sim[,2]),]
 fac_proj <- read.csv("E:\\USA\\hackumbc2017\\hackumbc17\\pid_fid_map.csv")
 faculty_proj <- data.frame(fac_proj$fid,fac_proj$pid)
 names(faculty_proj) <- c('fid','pid')
+
+fr <- read.csv("E:\\USA\\hackumbc2017\\fid_rating.csv")
+facrating <- data.frame(fr$fid,fr$rating)
+names(facrating) <- c('fid','rating')
+
 w1 <- 0.60
 w2 <- 0.40
-finalres <- combineprojfacsim(w1,w2,faculty_sim[1:5,],proj_sim[1:5,],faculty_proj)
+w3 <- 0.10
+finalres <- combineprojfacsim(w1,w2,w3,faculty_sim[1:5,],proj_sim[1:5,],faculty_proj,facrating)
+
+
+#
+
+

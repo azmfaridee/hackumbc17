@@ -110,10 +110,14 @@ querymatch <- function(query, term_mat_filepath, doc_mat_filepath, terms_filepat
 }
 
 
-combineprojfacsim <- function(w1,w2,faculty_sim,proj_sim,faculty_proj){
+combineprojfacsim <- function(w1,w2,w3,faculty_sim,proj_sim,faculty_proj,facrating){
   
   finalsim <- vector()
   
+  #get faculty rating
+  rating <- facrating[facrating$fid==faculty_sim$fid[i],'rating']
+  
+  finalsimtemp <- faculty_sim$sim[i] * w1 + rating * w3
   
   for(i in 1:length(faculty_sim$fid)){
     #print(i)

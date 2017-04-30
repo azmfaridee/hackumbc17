@@ -9,14 +9,18 @@
 #w2 <- weight for prac sim
 
 w1 <- 0.60
-w2 <- 0.40
+w2 <- 0.30
+w3 <- 0.10
 
 finalsim <- vector()
 
 
 for(i in 1:length(faculty_sim$fid)){
   print(i)
-  finalsimtemp <- faculty_sim$sim[i] * w1
+  #get faculty rating
+  rating <- facrating[facrating$fid==faculty_sim$fid[i],'rating']
+    
+  finalsimtemp <- faculty_sim$sim[i] * w1 + rating * w3
   
   p <- faculty_proj[faculty_proj$fid==faculty_sim$fid[i],2]
   
