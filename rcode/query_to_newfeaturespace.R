@@ -123,4 +123,6 @@ for( i in 1:nrow(v)){
 simtemp <- similarity
 names(simtemp) <- c(1:length(similarity))
 
-order(simtemp, decreasing=TRUE)
+#order(simtemp, decreasing=TRUE)
+fid <- c(1:length(similarity))
+faculty_sim <- data.frame(fid,similarity)

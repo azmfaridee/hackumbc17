@@ -123,4 +123,6 @@ for( i in 1:nrow(v)){
 simtemp <- similarity
 names(simtemp) <- c(1:length(similarity))
 
-order(simtemp, decreasing=TRUE)
+#order(simtemp, decreasing=TRUE)
+pid <- c(1:length(similarity))
+proj_sim <- data.frame(pid,similarity)
