@@ -123,7 +123,7 @@ combineprojfacsim <- function(w1,w2,faculty_sim,proj_sim,faculty_proj){
     
     if(length(p)!=0){
       for(j in 1:length(p)){
-        projsimtemp <- proj_sim[proj_sim$pid==p[j],'sim']
+        projsimtemp <- proj_sim[proj_sim$pid==p[j],'similarity']
         
         if(length(projsimtemp)!=0){
           finalsimtemp <- finalsimtemp + (projsimtemp * w2)}
