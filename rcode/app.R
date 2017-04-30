@@ -33,6 +33,14 @@ saveData <- function(data) {
 }
 
 
+pullData  <- function(data){
+  
+  # pull research intrests and skills
+  var_pull <- c("r_intrests","skills") 
+  r_inrest <- data[var_pull]
+  return(r_inrest)
+}
+
 # Load all previous responses
 # ---- This is one of the two functions we will change for every storage type ----
 loadData <- function() {
@@ -84,7 +92,7 @@ shinyApp(
                   div(
                     id = "thankyou_msg",
                     h3("Thanks, your response was submitted successfully!"),
-                    actionLink("submit_another", "Submit another response")
+                    dataTableOutput('sampleData')
                   )
                 )
   ),
@@ -124,9 +132,16 @@ shinyApp(
       shinyjs::show("thankyou_msg")
     })
     
+    # new window code
     observeEvent(input$submit_another, {
       shinyjs::show("form")
       shinyjs::hide("thankyou_msg")
-    })  
+    })
+    
+    output$sampleData <- renderDataTable({
+      formData()
+    })
+    
+    
   }
 )
