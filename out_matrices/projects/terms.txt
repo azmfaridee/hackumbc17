@@ -78,7 +78,6 @@ analytics
 analyzable
 analyze
 analyzing
-anderberg
 annotate
 annotating
 annotation
@@ -99,13 +98,13 @@ approximately
 architecture
 area
 areas
+arent
 arm
 armed
 around
 art
 asepsis
 aspect
-aspx
 assess
 assessment
 asset
@@ -116,6 +115,7 @@ associations
 assumed
 attack
 attacked
+attackers
 attackers
 attacks
 attempt
@@ -173,6 +173,7 @@ browsing
 build
 building
 buildings
+buildings
 builds
 bureau
 business
@@ -203,6 +204,7 @@ changes
 chans
 characteristics
 children
+childrens
 choices
 chronic
 circuit
@@ -230,7 +232,6 @@ collections
 collective
 collocated
 color
-com
 combined
 combines
 come
@@ -270,6 +271,7 @@ consequences
 considering
 constantly
 constellation
+constellations
 constitute
 constrained
 constructs
@@ -298,7 +300,6 @@ coping
 core
 corps
 correctly
-correlation
 cost
 costs
 coupled
@@ -318,6 +319,7 @@ curriculum
 curve
 custom
 customers
+customers
 customize
 customized
 cutting
@@ -331,6 +333,7 @@ darpa
 data
 dataset
 datasets
+day
 day
 dealing
 deals
@@ -381,6 +384,7 @@ developing
 development
 develops
 device
+devices
 devices
 dhs
 dialogue
@@ -433,7 +437,7 @@ dynamics
 earn
 easier
 easily
-economy
+economys
 edge
 edu
 educate
@@ -612,7 +616,6 @@ graduating
 graft
 grained
 grant
-grants
 graphical
 grasp
 greater
@@ -640,6 +643,7 @@ heat
 help
 helps
 hematopoietic
+hhas
 hhas
 hidden
 high
@@ -696,7 +700,6 @@ included
 includes
 including
 inclusive
-inclusiveweb
 income
 incoming
 incorporated
@@ -711,11 +714,13 @@ independently
 individual
 individualized
 individuals
+individuals
 industry
 ineffective
 inexpensive
 infer
 inferred
+information
 informed
 infrared
 infrastructure
@@ -770,6 +775,7 @@ isolating
 issue
 issues
 iteratively
+its
 journals
 journey
 kdd
@@ -814,7 +820,6 @@ live
 living
 load
 local
-localized
 locally
 located
 log
@@ -920,8 +925,8 @@ multiplexed
 must
 myriad
 nasa
-nation
 national
+nations
 native
 natural
 nature
@@ -951,6 +956,7 @@ notice
 novel
 nowadays
 nsf
+nsfs
 nsl
 number
 numbers
@@ -971,8 +977,6 @@ officers
 offices
 often
 older
-omic
-omics
 one
 ones
 ongoing
@@ -990,7 +994,6 @@ optimization
 optimize
 optimized
 order
-org
 organ
 organizational
 organizations
@@ -1007,6 +1010,7 @@ pages
 paradigms
 part
 participant
+participants
 participants
 participating
 particular
@@ -1039,6 +1043,7 @@ pilot
 piloting
 pinpoint
 pis
+pis
 place
 plan
 planning
@@ -1048,6 +1053,7 @@ platforms
 play
 players
 plug
+plugs
 plugs
 point
 pointing
@@ -1101,6 +1107,7 @@ productive
 professional
 profiling
 program
+programs
 programs
 progress
 project
@@ -1237,12 +1244,14 @@ scholarship
 school
 science
 sciences
+science
 scientific
 scientist
 scientists
 scope
 seamlessly
 search
+searchers
 searchers
 searching
 second
@@ -1374,6 +1383,7 @@ teams
 techniques
 technological
 technologies
+technologies
 technology
 temporal
 temporary
@@ -1396,14 +1406,13 @@ throughout
 thrust
 thus
 time
-today
+todays
 together
 tool
 tools
 topics
 total
 touch
-touchless
 touchscreens
 toward
 towards
@@ -1454,6 +1463,7 @@ use
 used
 user
 users
+users
 uses
 using
 utilize
@@ -1488,7 +1498,7 @@ voice
 voluntary
 volunteers
 vote
-voter
+voters
 voting
 votingvoice
 washington
@@ -1520,10 +1530,23 @@ working
 workshop
 workshops
 world
+world
 would
 written
 www
 years
 yield
 young
+zero
+localized
+omic
+omics
+smart
+a
+anderberg
+correlation
+real
+science
+touchless
+unknown
 zero
